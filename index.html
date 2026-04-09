@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafaele de Oliveira Amaro | Beleza e Estética</title>
+    <style>
+        /* Estilos Globais */
+        :root {
+            --primary-color: #d4a373; /* Tom bronze/dourado profissional */
+            --dark-color: #333;
+            --light-bg: #fdfaf7;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: var(--dark-color);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Navegação */
+        nav {
+            background: var(--white);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Seções */
+        section {
+            padding: 5rem 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        /* Quem Somos */
+        #quem-somos p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Serviços (Cards) */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            border-top: 5px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Privacidade */
+        .privacy-content {
+            background: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 10%;
+            text-align: center;
+        }
+
+        footer .info-empresa {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+
+        footer strong {
+            opacity: 1;
+            color: var(--primary-color);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            section { padding: 3rem 5%; }
+            nav a { margin: 0 8px; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rafaele de Oliveira Amaro</h1>
+        <p>Cuidado Profissional • Estética • Bem-estar</p>
+    </header>
+
+    <nav>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#privacidade">Privacidade</a>
+    </nav>
+
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>
+            Desde nossa fundação em <strong>18/12/2023</strong>, a empresa <strong>Rafaele de Oliveira Amaro</strong> 
+            tem o compromisso de oferecer serviços de excelência em Nova Iguaçu. 
+        </p>
+        <p>
+            Nosso foco é proporcionar uma experiência de cuidado única, unindo técnica profissional, 
+            atendimento humanizado e produtos de alta qualidade para realçar a sua beleza natural.
+        </p>
+    </section>
+
+    <hr style="border: 0; border-top: 1px solid #eee; width: 80%;">
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <span class="service-icon">✂️</span>
+                <h3>Cortes de Cabelo</h3>
+                <p>Cortes personalizados (feminino e masculino) que respeitam o seu estilo e visagismo. Do clássico às últimas tendências, garantindo movimento e saúde aos fios.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">💅</span>
+                <h3>Manicure e Pedicure</h3>
+                <p>Tratamento completo para mãos e pés. Cutilagem cuidadosa, esmaltação impecável e hidratação profunda em um ambiente com total higiene e segurança.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacidade" style="background-color: #fff;">
+        <h2>Políticas de Privacidade</h2>
+        <div class="privacy-content">
+            <p>A proteção dos seus dados é importante para nós. Coletamos informações como nome e telefone apenas para agendamentos e contato direto com o cliente. Seus dados são armazenados de forma segura e não são compartilhados com terceiros. Cumprimos rigorosamente a legislação vigente (LGPD) para assegurar sua total tranquilidade ao utilizar nossos serviços.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info-empresa">
+            <p><strong>Rafaele de Oliveira Amaro</strong></p>
+            <p>CNPJ: 53.251.520/0001-33</p>
+            <p>CNAE: 9602-5/01 - Cabeleireiros, manicure e pedicure</p>
+        </div>
+        <div class="info-endereco">
+            <p>Rua da Aliança, 2 - Cabuçu</p>
+            <p>Nova Iguaçu - RJ | CEP: 26.291-212</p>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem;">&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
